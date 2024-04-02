@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:#000;
+    color: #fff;
+}
+/* -------------------------------- HEADER ----------------------------------- */
+.header{
+    height: 98vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('WhatsApp\ Image\ 2023-09-03\ at\ 10.21.33\ PM.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 25px 168px;
+    height: 5.40rem;
+}
+nav > img{
+    height: 51px;
+    width: 160px;
+}
+.btn1{
+    padding: 3px 3px 3px 20px;
+    margin-right: 20px;
+    width: 130px;
+    font-size: 18px;
+    background-color: #0F0F0F;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn2{
+    padding: 5px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color:#E50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btn2:hover{
+   background-color: #c00710;
+}
+/* ----------------------------------- HOME PAGE ----------------------------------- */
+.home > h1{
+   text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 160px 160px 0px 160px;
+}
+.home > p{
+    text-align: center;
+    font-weight: 400; 
+}
+#p1{
+    font-size: 1.7rem;
+}
+#p2{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.homebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#E-mail{
+    width: 350px;
+    height: 60px;
+    background-color:#0f0f0fae;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-left: 12px;
+    margin: 15px;
+    font-size: 18px;
+}
+.btn3{
+    background-color: #E50914;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+.btn3:hover{
+    background-color: #c00710;
+}
+hr{
+    width: 100%;
+    height: 8px;
+    background-color: #272727;
+    border: none;
+}
+/* ------------------------------------ SECTION 1 ---------------------------------------------- */
+.sec1{
+    display: flex;
+}
+.container1{
+    width: 50%;
+}
+.container1 > h1{
+    font-size: 3rem;
+    padding-top: 195px;
+    padding-left: 24%;
+    font-weight: 800;
+}
+.container1 > p{
+    font-size: 24px;
+    padding-left: 24%;
+}
+.container2{
+    width: 50%;
+    padding: 140px 0px 90px 60px;
+}
+/* --------------------------------------------------- SECTION 2 ------------------------------------------------ */
+.sec2{
+    display: flex;
+}
+.cont1{
+    width: 50%;
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cont2 > h1{
+    font-size: 3rem;
+    padding: 160px 180px 20px 0px;
+    font-weight: 800;
+}
+.cont2{
+    width: 50%;
+}
+.cont2 > p{
+    font-size: 24px;
+    padding-left: 0px;
+    padding-right: 140px;
+}
+/* --------------------------------------------------- SECTION 3 ------------------------------------------------ */
+.sec3{
+    display: flex;
+}
+/* -------------------------------------------------- SECTION 4 ------------------------------------------------- */
+.sec4{
+    display: flex;
+}
+.cont-4{
+    width: 50%;
+    padding-left: 170px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+/* --------------------------------------------------- SECTION 5 ------------------------------------------------ */
+.sec5 > h1 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.sec5{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1150px;
+}
+.sec5 > li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.sec5 li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    background-color: #272727;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 65px;
+    font-weight: 100;
+    position: absolute;
+    right: 20px;
+    top: -12px;
+}
+li input{
+    display: none;
+}
+.content{
+    font-size: 22px;
+    background-color: #0F0F0F;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s, padding 0.5s;
+}
+.faq input:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.faq input:checked + label::after{
+    transform: rotate(135deg);
+    margin-top: 10px;
+}
+#p3{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 40px;
+}
+.faq-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.faqs{
+    margin-top: -120px;
+}
+/* --------------------------------------------- FOOTER ------------------------------------------- */
+#ques{
+    margin: 80px 0px 30px 180px;
+    color: #ffffffc8;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -128px;
+    margin-bottom: 40px;
+}
+.col a{
+    display: block;
+    padding: 5px;
+    color: #ffffffc8;
+}
+.footer-btn{
+    margin-left: 180px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    width: 150px;
+}
+#last {
+    color: #ffffffc8;
+    margin: 25px 0px 70px 180px;
+}
